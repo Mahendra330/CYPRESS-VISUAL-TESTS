@@ -1,0 +1,26 @@
+{
+  "name": "cy-visual-tests",
+  "version": "1.0.0",
+  "description": "Visual Regression Testing Using Cypress",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run-tests": "cypress run",
+    "cy:update-snapshots": "cypress run --env updateSnapshots=true",
+    "cy:run-tests-with-no-failure": "cypress run --env failOnSnapshotDiff=false"
+  },
+  "keywords": [
+    "cypress",
+    "visual",
+    "Testing",
+    "Snapshots"
+  ],
+  "author": "Mahendra Kumar Barik",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^4.5.0",
+    "cypress-image-snapshot": "^3.1.1",
+    "path-parse": "^1.0.6",
+    "prettier": "^2.0.5"
+  }
+}
